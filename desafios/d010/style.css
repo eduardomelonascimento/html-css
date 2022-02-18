@@ -71,6 +71,7 @@ header {
     border-bottom: 5px;
     min-width: 400px;
     margin-top: -18px;
+    margin: auto;
 }
 
 header > h1 {
@@ -255,4 +256,5 @@ footer > p {
     border: 0px;
     padding: 0px;
     min-width: 400px;
+    margin: auto;
 }
