@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img.png" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <center>
+        <h1>Desafio 007: Imagem Flexível</h1>
+    </center>
+    <p>Ajuste o tamanho da tela e veja a reação da imagem.</p>
+        <picture>
+            <source media="(max-width: 550px)" srcset="imagem-500.png" width: 400 heigth: auto>
+            <source media="(max-width: 625px)" srcset="imagem-500.png">
+            <source media="(max-width: 725px)" srcset="imagem-600.png">
+            <source media="(max-width:1225px)" srcset="imagem-700.png">
+            <img src="imagem-1200.png" alt="imagem">
+        </picture>
+</body>
+</html>

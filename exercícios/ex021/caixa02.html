@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: gray;
+            width: 800px;
+            padding: 10px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            border: 1px solid black;
+            border-top-right-radius: 20px;
+            box-shadow: 5px 3px 10px 3px #00000046;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: white;
+        }
+
+        nav {
+            box-shadow: 5px 3px 10px 3px #00000086;
+        }
+
+        header>nav {
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px 5px;
+            background-color: gray;
+        }
+
+        nav>a {
+            margin-left: 10px;
+            margin-right: 30px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        main {
+            background-color: white;
+            border: 1px solid black;
+            border-bottom-left-radius: 20px;
+            box-shadow: 5px 3px 10px 3px #00000046;
+            padding: 10px;
+        }
+
+        aside {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 4px;
+        }
+
+        .asidein {
+            height: fit-content;
+        }
+
+        .asideout {
+            display: flex;
+            width: 200px;
+        }
+
+        .article1 {
+            width: 500px;
+            height: fit-content;
+            margin: 4px;
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid black;
+        }
+
+        .article2 {
+            width: 500px;
+            height: 400px;
+            margin: 4px;
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid black;
+        }
+
+        .article2>div {
+            display: flex;
+        }
+
+        .article2>h2 {
+            width: fit-content;
+            margin: 0px;
+        }
+
+        .article2>p {
+            margin: 0px;
+        }
+
+        .article2.asidein {
+            width: fit-content;
+            height: fit-content;
+            margin: 0px;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1> Notícias</h1>
+            <nav>
+                <a href="#"> link</a>
+                <a href="#"> link</a>
+                <a href="#"> link</a>
+                <a href="#"> link</a>
+            </nav>
+        </header>
+        <main>
+            <section class="maincontent">
+                <article class="article1">
+                    <h2>Article 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eum quae officiis commodi sit
+                        veritatis voluptatibus! Officia qui laborum fuga porro, numquam soluta est voluptate obcaecati
+                        facilis? Doloribus, vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, enim
+                        temporibus. Tempora, cupiditate eveniet pariatur fugit saepe aut ea vel consectetur magni, error
+                        perferendis id deleniti eius possimus harum qui. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Sequi nihil laborum excepturi. Quaerat perspiciatis molestiae voluptatum
+                        aliquam totam hic iste similique. Repellat architecto id reiciendis, voluptatibus ipsum esse
+                        tempora accusantium!</p>
+                </article>
+                <article class="article2">
+                    <h2>Article 2</h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eum quae officiis commodi
+                            sit veritatis voluptatibus! Officia qui laborum fuga porro, numquam soluta est voluptate
+                            obcaecati facilis? Doloribus, vero. Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sit, enim temporibus. Tempora, cupiditate eveniet pariatur fugit saepe aut ea vel
+                            consectetur magni, error perferendis id deleniti eius possimus harum qui. Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Sequi nihil laborum excepturi. Quaerat perspiciatis
+                            molestiae voluptatum aliquam totam hic iste similique. Repellat architecto id reiciendis,
+                            voluptatibus ipsum esse tempora accusantium!</p>
+                        <aside class="asidein">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi recusandae debitis,
+                            molestias veritatis minima ullam reprehenderit veniam minus, nulla eius.
+                        </aside>
+                    </div>
+                </article>
+                <aside class="asideout">
+                    Conteúdo Periférico do Site
+                </aside>
+            </section>
+        </main>
+        <footer>
+            ########################
+        </footer>
+    </div>
+</body>
+
+</html>
