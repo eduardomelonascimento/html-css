@@ -64,7 +64,7 @@ body {
 }
 
 header {
-    min-width: 400px;
+    min-width: 440px;
     color: white;
     background-image: linear-gradient(180deg, var(--cor2), var(--cor5));
     text-align: center;
@@ -236,5 +236,5 @@ footer {
     color: white;
     background-color: var(--cor5);
     padding: 5px 10px;
-    min-width: 400px;
+    min-width: 440px;
 }
