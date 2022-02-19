@@ -130,8 +130,9 @@ h1, h2 {
 }
 
 h2 {
+    width: fit-content;
     padding: 5px;
-    padding-left: 20px;
+    padding-left: 12px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     background-image: linear-gradient(to right, var(--cor0), white 100%)
