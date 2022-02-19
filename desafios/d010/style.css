@@ -65,7 +65,7 @@ body {
 }
 
 header {
-    min-width: 400px;
+    min-width: 320px;
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
     text-align: center;
 }
@@ -107,7 +107,7 @@ nav > a:hover {
 } 
 
 main {
-    min-width: 400px;
+    min-width: 320px;
     max-width: 800px;
     margin: auto;
     margin-bottom: -10px;
@@ -236,5 +236,5 @@ footer {
     color: white;
     background-color: var(--cor5);
     padding: 5px 10px;
-    min-width: 400px;
+    min-width: 320px;
 }
