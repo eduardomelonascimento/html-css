@@ -134,7 +134,7 @@ h2 {
     padding-left: 20px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-image: linear-gradient(45deg, var(--cor1), white);
+    background-image: linear-gradient(to right, var(--cor0), white 100%)
 }
 
 img {
