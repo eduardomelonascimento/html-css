@@ -69,9 +69,8 @@ header {
     text-align: center;
     padding-top: 1px;
     border-bottom: 5px;
-    min-width: 400px;
+    min-width: 420px;
     margin-top: -18px;
-    margin: auto;
 }
 
 header > h1 {
@@ -80,17 +79,6 @@ header > h1 {
     font-weight: bold;
     color: white;
     margin-bottom: 0px;
-}
-
-header > p {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.801);
-    font-size: 1.5em;
-    color: rgb(221, 219, 219);
-    max-width: 600px;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
 }
 
 nav {
@@ -249,9 +237,5 @@ footer {
     color: white;
     background-color: var(--cor5);
     padding: 5px 10px;
-}
-
-footer > p {
-    padding: 0px;
     min-width: 400px;
 }
