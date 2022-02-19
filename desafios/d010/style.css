@@ -65,13 +65,9 @@ body {
 }
 
 header {
-    min-width: 450px;
-    color: white;
-    background-image: linear-gradient(180deg, var(--cor2), var(--cor5));
+    min-width: 400px;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
     text-align: center;
-    padding-top: 1px;
-    border-bottom: 5px;
-
 }
 
 header > h1 {
