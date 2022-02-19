@@ -124,7 +124,7 @@ main > article > h1,h2 {
 }
 
 h1, h2 {
-    margin: 16px;
+    margin: 16px 0px;
     font-family: 'idroid';
     color: #1A5C38;
 }
