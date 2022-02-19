@@ -252,9 +252,6 @@ footer {
 }
 
 footer > p {
-    margin: 0px;
-    border: 0px;
     padding: 0px;
     min-width: 400px;
-    margin: auto;
 }
