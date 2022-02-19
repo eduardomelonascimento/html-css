@@ -59,7 +59,7 @@ p > a:hover {
 }
 
 body {
-    min-width: 400px;
+    min-width: 320px;
     background-color: var(--cor0);
     font-family: var(--fonte0);
 }
@@ -233,7 +233,7 @@ p.agradecimentos {
 footer {
     text-align: center;
     font-weight: normal;
-    color: white;
+    color: hsl(0, 0%, 100%);
     background-color: var(--cor5);
     padding: 5px 10px;
     min-width: 320px;
