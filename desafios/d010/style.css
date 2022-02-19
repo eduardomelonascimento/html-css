@@ -59,13 +59,12 @@ p > a:hover {
 }
 
 body {
-    min-width: 400px;
     background-color: var(--cor0);
     font-family: var(--fonte0);
 }
 
 header {
-    min-width: 400px;
+    min-width: 320px;
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
     text-align: center;
 }
@@ -236,5 +235,5 @@ footer {
     color: hsl(0, 0%, 100%);
     background-color: var(--cor5);
     padding: 5px 10px;
-    min-width: 400;
+    min-width: 320px;
 }
