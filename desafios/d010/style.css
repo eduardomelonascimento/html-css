@@ -60,11 +60,11 @@ p > a:hover {
 
 body {
     background-color: var(--cor0);
-    font-family: var(--fonte0)
+    font-family: var(--fonte0);
 }
 
 header {
-    min-width: 450px;
+    min-width: 400px;
     color: white;
     background-image: linear-gradient(180deg, var(--cor2), var(--cor5));
     text-align: center;
@@ -236,5 +236,5 @@ footer {
     color: white;
     background-color: var(--cor5);
     padding: 5px 10px;
-    min-width: 450px;
+    min-width: 400px;
 }
