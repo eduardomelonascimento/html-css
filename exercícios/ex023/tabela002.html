@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200vh;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+        caption {
+            padding-bottom: 3px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        thead {
+            background-color: #363636;
+            color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #363636;
+        }
+        
+        td,th {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        tbody > tr:nth-child(2n -1) {
+            background-color: lightgray;
+        }
+    
+        .mudanca {color: green;}
+
+        .num {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--Anatomia para tabelas grandes:
+            THead    
+            TR, TD, TH
+            TBody
+            TR, TD, TH
+            TFoot
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col">População (2021)</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País Comparável (habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+                <td class="num">46.649.132</td>
+                <td class="mudanca">+13.05%</td>
+                <td>21,9%</td>
+                <td>Espanha (46.439.864)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+                <td class="num">21.411.923</td>
+                <td class="mudanca">+9.26%</td>
+                <td>10,1%</td>
+                <td>Sri Lanka (20.675.000)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+                <td class="num">17.463.347</td>
+                <td class="mudanca">+9.21%</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16.922.900</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14.016.906</td>
+                <td class="num">14.985.284</td>
+                <td class="mudanca">+6.91%</td>
+                <td>7,1%</td>
+                <td>Chade (14.037.000)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+                <td class="num">11.597.484</td>
+                <td class="mudanca">+5.4%</td>
+                <td>5,4%</td>
+                <td>Bolívia (11.410.651)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Posição</th>
+            <th>Unidade Federativa</th>
+            <th>População (2010)</th>
+            <th>População (2021)</th>
+            <th>Mudança</th>
+            <th>% da pop. total</th>
+            <th>País Comparável (habitantes)</th>
+        </tfoot>
+        
+    </table>
+
+
+</body>
+</html>
