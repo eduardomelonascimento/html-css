@@ -71,19 +71,19 @@ section.imagem > p {
     display: inline-block;
     padding: 5px;
     border-radius: 5px;
+    background-attachment: fixed;
 }
 
 section#img01 {
     background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;
     background-position: right center;
     background-size: cover;
 }
 
 section#img02 {
     background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
-    background-size: cover
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
