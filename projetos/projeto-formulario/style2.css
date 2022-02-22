@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to right, rgb(20,147,220), rgb(17, 54, 71));
     color: white;
+    min-width: 320px;
 }
 
 .box {
