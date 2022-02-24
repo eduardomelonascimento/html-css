@@ -6,9 +6,10 @@
 }
 
 body {
-    background-color: violet;
     background: url("showcase.webp") center center/cover;
     background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 main {
