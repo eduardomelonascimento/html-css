@@ -7,6 +7,8 @@
 
 body {
     background-color: violet;
+    background: url("showcase.webp") center center/cover;
+    background-attachment: fixed;
 }
 
 main {
