@@ -98,9 +98,15 @@ main {
     margin-bottom: 25px;
 }
 
+
+
 .maincontainer .formbox .radio label {
     display: flex;
     margin-bottom: 10px;
+}
+
+.maincontainer .formbox .radio label, input:hover {
+    cursor: pointer;
 }
 
 .maincontainer .formbox .radio .option {
@@ -127,6 +133,10 @@ main {
 .maincontainer .checkbox .checks label {
     display: flex;
     margin-bottom: 10px;
+}
+
+.maincontainer .checkbox .checks label:hover {
+    cursor: pointer;
 }
 
 .maincontainer .checkbox .checks input {
@@ -163,4 +173,8 @@ main {
     width: 100%;
     padding: 12px;
     font-size: 16px;
+}
+
+.maincontainer .button button:hover {
+    cursor: pointer;
 }
