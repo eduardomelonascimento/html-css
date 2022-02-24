@@ -6,10 +6,10 @@
 }
 
 body {
-    background: url("showcase.webp") center center/cover;
-    background-attachment: fixed;
+    background: url("showcase.webp") center bottom/cover no-repeat;
+    background-attachment: scroll;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 main {
