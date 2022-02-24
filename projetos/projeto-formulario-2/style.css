@@ -67,6 +67,10 @@ main {
     border: none;
 }
 
+.maincontainer .personal-data input:focus {
+    border: 2px solid rgba(0, 0, 255, 0.425);
+}
+
 .maincontainer .select1 {
     word-spacing: 3px;
 }
@@ -108,7 +112,7 @@ main {
     margin-bottom: 10px;
 }
 
-.maincontainer .formbox .radio label, input:hover {
+.maincontainer .formbox .radio label, select, .input-checkbox, .input-radio:hover {
     cursor: pointer;
 }
 
