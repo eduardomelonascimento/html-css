@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
@@ -27,17 +28,17 @@ body {
     justify-content: space-between;
 }
 
-#navbar .navbar-container .logo {
+/*#navbar .navbar-container*/ .logo {
     height: 40px;
 }
 
-#navbar .navbar-container .logo:hover {
+.logo:hover {
     cursor: pointer;
 }
 
 #navbar .navbar-container .navbar-items {
     display: flex;
-    list-style: none;
+
 }
 
 #navbar .navbar-container .navbar-items .navbar-item {
@@ -95,7 +96,7 @@ body {
     border: none;
     font-weight: bold;
     color: white;
-    background-color: #2DE26D;
+    background-color: #1ED760;
     padding: 14px 32px;
     border-radius: 30px;
     text-transform: uppercase;
@@ -103,7 +104,106 @@ body {
 
 #showcase .showcase-container .btn-primary:hover {
     cursor: pointer;
-    padding: 18px 34px;
+    background-color: #2DE26D;
 }
 
 /* Showcase/Main */
+/*Footer*/
+
+#footer {
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#footer .footer-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 80px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer .footer-container .footer-item {
+   
+    padding: 3px 0 22px 0;
+}
+
+#footer .footer-container .footer-logo {
+    display: flex;
+}
+
+#footer .footer-container .footer-title {
+    margin: 20px 0;
+    color: #919496;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#footer .footer-container .footer-socials {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 25px 15px 0 116.344px;
+}
+
+#footer .footer-container .footer-socials i {
+    padding: 15px;
+    background-color: #222326;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+#footer .footer-container .footer-socials i:hover {
+    color: #1ED751;
+    cursor: pointer;
+}
+
+.footer-item:hover, .footer-legal-item:hover {
+    color: #1ED751;
+    cursor: pointer;
+}
+
+#footer .footer-legal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#footer .footer-legal .footer-legal-items {
+    display: flex;
+    align-items: center
+}
+
+.footer-legal-item {
+    padding: 12px 0;
+    margin-right: 24px;
+    color: #919496;
+    font-size: 12px;
+}
+
+.footer-legal p:hover {
+    cursor: text;
+    color: #919496;
+}
+
+.country {
+    text-align: right;
+    max-width: 90%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.country > .footer-legal-item {
+    display: inline;
+    margin: 0;
+}
+
+.country i:hover {
+    color: #919496;
+}
+
+/* Footer-footer */
