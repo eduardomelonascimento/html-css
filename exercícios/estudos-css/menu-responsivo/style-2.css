@@ -15,7 +15,10 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+}
+
+.headercontainer .logo {
+    margin: 20px 10px;
 }
 
 .headercontainer a {
@@ -30,6 +33,7 @@ header {
 .headercontainer ul a {
     font-weight: bold;
     padding: 30px 15px;
+    display: block;
 }
 
 .headercontainer .navbar-items {
@@ -78,11 +82,11 @@ button:focus ~ ul {
     }
 
     .navbar-item {
-        padding: 20px 20px 20px 0px;
+        padding: ;
     }
 
-    a {
-        padding: 10px;
+    .headercontainer ul a {
+        padding: 10px 30px 10px 10px;
     }
 
 }
