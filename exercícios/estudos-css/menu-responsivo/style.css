@@ -56,6 +56,8 @@ button:hover {
 button:focus ~ ul {
     display: flex;
     height: fit-content;
+   
+    justify-content: flex-end;
 }
 
 
