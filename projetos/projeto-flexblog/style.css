@@ -56,7 +56,11 @@ ul {
 }
 
 .header h1 {
-    margin: 0 10px;
+    margin: 0 10px;   
+}
+
+.header h1 a {
+    color: white;
 }
 
 .header-nav {
@@ -68,6 +72,10 @@ ul {
     color: white;
     padding: 10px;
     font-size: 1.25rem;
+}
+
+.header-nav a:hover {
+    color: #122AB2;
 }
 
 /* Header */
@@ -187,6 +195,8 @@ main {
 /* Preço */
 
 .preco {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -368,7 +378,7 @@ main {
 }
 
 .newsletter-registro {
-     flex: 2 1 60px;
+     flex: 3 1 200px;
      margin: 0 10px;
      align-self: center;
      display: flex;
@@ -377,7 +387,7 @@ main {
 }
 
 .newsletter-registro input {
-    flex: 3 1 60px;
+    flex: 2 1 60px;
     font-size: 1.25rem;
     font-style: italic;
     color: #7C7C7C;
@@ -387,9 +397,10 @@ main {
 }
 
 .newsletter-registro button {
-    flex: 1 1 60px;
+    flex: 2 1 60px;
     padding: 10px;
     font-size: 2.25rem;
+    text-transform: uppercase;
     font-weight: bold;
     color: white;
     background-color: #2C70FF;
@@ -397,7 +408,12 @@ main {
     border: none;
 }
 
-@media (max-width: 450px) {
+.newsletter-registro button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 490px) {
     .newsletter-container {
         padding-top: 0;
     }
