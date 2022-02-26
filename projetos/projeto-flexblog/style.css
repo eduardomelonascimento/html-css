@@ -259,6 +259,8 @@ main {
     font-size: 1.25rem;
     font-style: italic;
     margin-bottom: 1rem;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
