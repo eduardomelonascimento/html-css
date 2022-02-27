@@ -112,7 +112,7 @@ main {
 
 .sobre-texto {
     margin: 10px;
-    flex: 2 1 300px;
+    flex: 2 1 350px;
 }
 
 .sobre-texto h2 {
@@ -127,6 +127,10 @@ main {
     line-height: 1.4;
     margin-bottom: 1.25rem;
  
+}
+
+.imagens-container {
+    display: flex;
 }
 
 .sobre-imagens {
