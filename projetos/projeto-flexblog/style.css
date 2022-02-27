@@ -14,7 +14,10 @@ ul {
     list-style: none;
 }
 
-
+img {
+	display: block;
+	max-width: 100%;
+}
 
 /* Header */
 
@@ -128,13 +131,18 @@ main {
 
 .sobre-imagens {
     margin: 10px 10px;
-    flex-wrap: wrap;
     flex: 1 1 140px;
     align-self: flex-start;
 }
 
 .sobre-imagens img {
     max-width: 100%;
+}
+
+@media (max-width: 685px) {
+    .sobre-imagens {
+
+    }
 }
 
 /* Sobre */
@@ -152,22 +160,14 @@ main {
 }
 
 .produtos-container {
-    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
 }
 
-.produtos-container img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
 .produtos-item {
     margin: 10px;
-    flex: 1 1 160px;
-    width: fit-content;
+    flex: 1 1 175px;
 }
 
 .produtos-item h2 {
@@ -209,7 +209,7 @@ main {
     border: 4px solid white;
     padding: 20px;
     margin: 10px;
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     max-width: 350px;
 }
 
@@ -301,7 +301,7 @@ main {
 }
 
 .qualidade-item {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     margin: 20px 10px;
     max-width: 350px;
 }
