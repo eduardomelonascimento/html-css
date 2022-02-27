@@ -82,11 +82,15 @@ button:focus ~ ul {
     }
 
     .navbar-item {
-        padding: ;
+        padding: 15px;
     }
 
-    .headercontainer ul a {
-        padding: 10px 30px 10px 10px;
+    .headercontainer ul li {
+        padding: 0px;
+    }
+
+    .headercontainer ul li a {
+        padding: 10px;
     }
 
 }
