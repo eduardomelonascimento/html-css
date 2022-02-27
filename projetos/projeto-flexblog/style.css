@@ -108,7 +108,7 @@ button:focus ~ .header-nav {
 
 @media (max-width: 700px) {
 
-    button {
+    nav button {
         display: flex;
         margin: 0px 10px;
         cursor: pointer;
@@ -154,6 +154,13 @@ main {
     color: #222222;
 }
 
+@media (max-width: 325px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+}
+
+
 /* Sobre */
 
 .sobre {
@@ -197,11 +204,14 @@ main {
     max-width: 100%;
 }
 
-@media (max-width: 685px) {
+@media (max-width: 340px) {
     .sobre-imagens {
-
+        margin: 10px 10px;
+        flex: 1 1 100px;
+        align-self: flex-start;
     }
 }
+
 
 /* Sobre */
 
@@ -271,7 +281,7 @@ main {
     max-width: 350px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 740px) {
 
     .preco {
         padding: 30px;
@@ -466,6 +476,8 @@ main {
     background-color: #2C70FF;
     outline: none;
     border: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .newsletter-registro button a {
@@ -473,7 +485,7 @@ main {
     color: white;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 650px) {
     .newsletter-container {
         padding-top: 0;
     }
