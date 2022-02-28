@@ -288,6 +288,14 @@ footer {
     .footer-top-item {
         justify-content: flex-start;
     }
+
+    .footer-top-item a {
+        width: fit-content;
+    }
+
+    .footer-top-socials a {
+        padding: 10px;
+    }
 }
 
 
