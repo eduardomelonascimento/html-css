@@ -1,6 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circular', sans-serif;
+}
 
-
+@font-face {
+    font-family: 'Circular';
+    src: url('Circular/CircularStd-Medium.otf') format('opentype'), url('Circular/CircularStd-Bold.otf') format('opentype');
+}
 
 header {
     background-color: black;
+}
+
+.header-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 40px;
+}
+
+.header-nav ul {
+    list-style: none;
+    color: white;
+    
+    display: flex;
+}
+
+.header-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 24px;
+    padding: 28px 17px;
+}
+
+.header-nav a:hover {
+    color:#1ED760;
+}
+
+.header-nav .separator {
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    margin: 32px 17px;
+    background: white;
 }
