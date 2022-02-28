@@ -108,7 +108,7 @@ button {
 
 .showcase-container {
     color: #1ED760;
-    height: 100vh;
+    height: 120vh;
     background-color: #2941AB;
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ footer {
 .footer-top-items {
     flex-grow: 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .footer-top-item {
