@@ -326,11 +326,17 @@ footer {
     .footer-top-items {
         flex-direction: column;
     }
-
-    .footer-legal a {
+    
+    .footer-legal ul li a {
         margin-right: 10px;
     }
 
+}
+
+@media (max-width:400px) {
+    .footer-legal ul {
+        max-width: 162px;
+    }
 }
 
 .footer-country {
