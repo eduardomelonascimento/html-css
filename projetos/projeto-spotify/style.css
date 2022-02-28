@@ -108,7 +108,7 @@ button {
 
 .showcase-container {
     color: #1ED760;
-    height: 120vh;
+    height: 100vh;
     background-color: #2941AB;
     display: flex;
     flex-direction: column;
@@ -141,6 +141,11 @@ button {
     padding: 14px 32px;
     border: none;
     border-radius: 30px;
+}
+
+.showcase-button > button:hover {
+    background-color: #2DE26D;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -221,7 +226,6 @@ footer {
     flex-grow: 2;
     display: flex;
     justify-content: space-around;
-    max-width: 700px;
 }
 
 .footer-top-item {
@@ -248,9 +252,13 @@ footer {
     padding: 3px 0 15px 0;
 }
 
+.footer-top-item a:hover {
+    color: #1ED760;
+}
+
 .footer-top-socials {
     display: flex;
-    margin: 0 15px 0 116.344px;
+    margin: 0 0 0 120px;    
 }
 
 .footer-top-socials a {
@@ -264,6 +272,10 @@ footer {
     font-size: 1.5rem;
 }
 
+.footer-top-socials a:hover {
+    color: #1ED760;
+}
+
 .footer-top-socials a i {
     display: block;
     width: 24px;
@@ -275,6 +287,11 @@ footer {
 @media (max-width: 1032px) {
     .footer-container {
         max-width: 750px;
+        padding: 0;
+    }
+
+    .footer-top-logo img {
+        height: 27.75px;
     }
    
     .footer-top {
@@ -289,21 +306,82 @@ footer {
         justify-content: flex-start;
     }
 
+    .footer-top-item p {
+        margin: 50px 0 22px 0;
+    }
+
     .footer-top-item a {
         width: fit-content;
     }
 
+    
     .footer-top-socials a {
         padding: 10px;
     }
 }
 
-
 @media (max-width: 695px) {
     .footer-top-items {
         flex-direction: column;
     }
+
+
 }
 
+.footer-country {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin: 0 15px 10px 15px;
+    color: #919496
+}
 
+.footer-country a {
+    color: #919496;
+    text-decoration: none;
+}
+
+.footer-country a:hover {
+    color: #1ED760;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 15px;
+    color: #919496;
+    font-size: 12px;
+}
+
+.footer-legal ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-legal ul a {
+    display: block;
+    color: #919496;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 24px;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.footer-legal ul a:hover {
+    color: #1ED760;
+}
+
+.footer-legal span {
+    min-width: fit-content;
+    padding: 10px 0;
+}
+
+@media (max-width: 675px) {
+    .footer-legal {
+        font-size: 10px;
+    }
+}
 /* Footer */
