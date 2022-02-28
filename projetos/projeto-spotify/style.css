@@ -10,17 +10,26 @@
     src: url('Circular/CircularStd-Medium.otf') format('opentype'), url('Circular/CircularStd-Bold.otf') format('opentype');
 }
 
+/* Header */
+
 header {
     background-color: black;
 }
 
 .header-container {
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        max-width: 970px;
+        height: 80px;
+    }   
 }
 
 .header-logo img {
@@ -32,6 +41,10 @@ header {
     color: white;
     
     display: flex;
+}
+
+.header-nav li:last-child a {
+    padding-right: 0px;
 }
 
 .header-nav a {
@@ -53,3 +66,87 @@ header {
     margin: 32px 17px;
     background: white;
 }
+
+/* Header */
+/* Showcase */
+
+.showcase-container {
+    color: #1ED760;
+    height: 100vh;
+    background-color: #2941AB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-title h1 {
+    font-size: 9.75rem;
+    line-height: 166px;
+    letter-spacing: -6.2px;
+    text-align: center;
+}
+
+.showcase-text p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.showcase-button button {
+    color: #2941AB;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #1ED760;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+    .showcase-container {
+        background-image: url('https://www-growth.scdn.co/static/home/bursts-tablet.svg');
+    background-repeat: no-repeat;
+    background-size: 153%;
+    background-position: right 40% center;
+    }
+    
+    .showcase-title h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: -4.2px;
+        margin-bottom: 24px;
+    }
+
+    .showcase-text p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    .showcase-container {
+        background-image: url('https://www-growth.scdn.co/static/home/bursts-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 215%;
+    background-position: center top 40%;
+    }
+    
+    .showcase-title h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: -1.9px;
+        margin-bottom: 1rem;
+    }
+
+    .showcase-text p {
+        font-size: 1rem;
+        
+        line-height: 1.5rem;
+        width: 312px;
+        margin-bottom: 32px;
+    }
+}
+
+/* Showcase */
