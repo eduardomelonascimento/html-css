@@ -220,12 +220,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 .footer-top-items {
     flex-grow: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .footer-top-item {
@@ -296,6 +297,7 @@ footer {
    
     .footer-top {
        flex-direction: column;
+       padding-bottom: 0;
     }
 
     .footer-top-socials {
