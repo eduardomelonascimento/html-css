@@ -100,7 +100,7 @@ button:focus ~ .header-nav {
     height: fit-content;
     width: fit-content;
     position: absolute;
-    top: 82px;
+    top: 81px;
     right: 0px;
     background-color: #2C70FF;
     transition: .5s;
