@@ -327,6 +327,9 @@ footer {
         flex-direction: column;
     }
 
+    .footer-legal a {
+        margin-right: 10px;
+    }
 
 }
 
@@ -360,6 +363,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: fit-content;
 }
 
 .footer-legal ul a {
