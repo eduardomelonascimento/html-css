@@ -10,6 +10,10 @@
     src: url('Circular/CircularStd-Medium.otf') format('opentype'), url('Circular/CircularStd-Bold.otf') format('opentype');
 }
 
+a:hover {
+    transition: .5s;
+}
+
 /* Header */
 
 header {
@@ -255,6 +259,7 @@ footer {
 
 .footer-top-item a:hover {
     color: #1ED760;
+    transition: .5s;
 }
 
 .footer-top-socials {
