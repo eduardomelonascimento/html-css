@@ -114,6 +114,10 @@ button {
     color: #1ED760;
     height: 120vh;
     background-color: #2941AB;
+    background-image: url('https://www-growth.scdn.co/static/home/bursts.svg');
+    background-position: right 56% top 7%;
+    background-size: 175%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
