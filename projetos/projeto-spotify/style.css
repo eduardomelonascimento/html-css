@@ -48,6 +48,10 @@ header {
         height: 27.75px;
     }
 
+    .header-nav {
+        display: none;
+    }
+    
     .header-nav ul li {
         display: none;
     }
@@ -56,24 +60,22 @@ header {
         display: none;
     }
 
-    .header-nav > button {
-        color: white;
-        background: none;
-        border: none;
-        font-size: 1.6rem;
-        font-weight: bold;
-        display: inline-block;
-        
+    .menu-toggle {
+        cursor: pointer;
+    }
+    
+    .menu-toggle div {
+       width: 22px;
+       height: 3px;
+       background-color: white;
+       margin: 4px;
+       border-radius: 30px;
     }
 
 }
 
  .logo {
     height: 40px;
-}
-
-button {
-    display: none;
 }
 
 .header-nav ul {
