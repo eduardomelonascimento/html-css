@@ -73,7 +73,8 @@ header {
 .article-text h1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin: 0 10px 30px 10px;
+
 }
 
 h1,p {
@@ -129,7 +130,7 @@ h1,p {
 }
 
 .number p {
-    margin: 50px;
+    margin: 50px 20px;
     text-align: center;
     text-transform: uppercase;
     color: #393939;
@@ -210,7 +211,7 @@ footer p {
         position: relative;
         background-color: #393939;
         padding-bottom: 60%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .map > iframe {
