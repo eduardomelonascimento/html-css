@@ -89,6 +89,7 @@ h1,p {
 .article-images {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .card {
@@ -97,4 +98,32 @@ h1,p {
 
 .card img {
     width: 100%;
+}
+
+.card p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.card .model-name {
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.article-text-2 {
+    color: white;
+    background-color: #393939;
+    padding: 100px;
+    text-transform: uppercase;
+}
+
+.article-text-2 h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.article-text-2 p {
+    max-width: 60%;
+    line-height: 1.5rem;
 }
