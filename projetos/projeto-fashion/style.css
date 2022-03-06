@@ -140,13 +140,84 @@ h1,p {
 footer {
     background-color: #1b1b1b;
     padding: 20px;
-    margin-top: -3px
 }
 
 footer p {
     text-align: center;
 }
 
-@media (max-width:750px) {
+@media (max-width:760px) {
     
+    header {
+        height: 25vh;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .header-logo img {
+        margin-left: 10px;
+    }
+    .menu-toggle {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        opacity: .5;
+        transition: .5s;
+    }
+
+    .menu-toggle:hover {
+        opacity: 1;
+    }
+
+    .line{
+        background-color: white;
+        width: 20px;
+        height: 2px;
+        margin: 7px 0;
+    }
+
+    .header-nav, ul, li {
+        display: none;
+    }
+
+    .article-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .article-images {
+        flex-wrap: wrap;
+    }
+
+    .article-images .card {
+        flex: 0 1 250px;
+    }
+
+    .article-text-2 {
+        padding: 40px;
+    }
+
+    .article-text-2 h2 {
+        font-size: 2rem;
+    }
+
+    .article-text-2 p {
+        max-width: 550px;
+    }
+
+    .map {
+        position: relative;
+        background-color: #393939;
+        padding-bottom: 60%;
+        margin-bottom: 30px;
+    }
+
+    .map > iframe {
+        position: absolute;
+        top: 5%;
+        left: 2.5%;
+        width: 95%;
+        height: 90%;
+    }
 }
