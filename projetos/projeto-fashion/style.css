@@ -127,3 +127,26 @@ h1,p {
     max-width: 60%;
     line-height: 1.5rem;
 }
+
+.number p {
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #393939;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin-top: -3px
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width:750px) {
+    
+}
