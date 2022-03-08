@@ -146,7 +146,6 @@ section a:hover {
 .recent-work {
     margin: 64px 0;
     padding: 64px 0;
-    border: 3px solid #efefef;
     border-top: 3px solid #efefef;
 }
 
@@ -216,7 +215,7 @@ section a:hover {
 
 .form-container textarea {
     display: block;
-    width: 100%;
+    width: 95%;
     resize: vertical;
 }
 
