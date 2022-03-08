@@ -71,6 +71,12 @@ strong {
     border: none;
 }
 
+.simple-link, .simple-link:hover {
+    padding: 0;
+    border: none;
+    line-height: inherit;
+}
+
 .footer-nav-icons {
     display: flex;
     justify-content: flex-end;
@@ -184,7 +190,8 @@ section a:hover {
 
 .form-container {
     display: flex;
-
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .form-container fieldset {
@@ -195,10 +202,57 @@ section a:hover {
     display: none;
 }
 
-.form-container input {
-    border: 1px solid #efefef;
+.form-container input, textarea {
+    border: 3px solid #efefef;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: inherit;
 }
 
-.address {
-    text-align: right;
+.form-container input:focus, textarea:focus {
+    outline-color: #49bf9d;
+}
+
+.form-container textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+.address li {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    font-size: 16px;
+    line-height: 28px;
+    color: #A2A2A2;
+}
+
+.address li h3 {
+    font-size: inherit;
+    color: #A2A2A2;
+    padding-right: 5px;
+}
+
+.addressli .fa-solid {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.button {
+    display: inline-block;
+    border: 3px solid #efefef !important;
+    border-radius: 8px !important;
+    padding: 13px 40px !important;
+    transition: .2s ease-in-out;
+    color: #787878 !important;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 3px solid #49bf9d !important;
+    color: #49bf9d !important;
 }
