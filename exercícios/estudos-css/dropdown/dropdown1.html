@@ -5,11 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropdown</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .drop-btn {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            transition: .3s ease-in-out;
+        }
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: dodgerblue;
+            width: 100%;
+            z-index: 1;
+            transition: .3s ease-in-out;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            color: rgb(221, 216, 216);
+            background-color: rgb(76, 161, 245);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+        }
+
+    </style>
 </head>
 <body>
     <h2>Dropdown Menu</h2>
     <div class="dropdown">
-        
+        <button class="drop-btn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>           
+        </div>
     </div>
 </body>
 </html>

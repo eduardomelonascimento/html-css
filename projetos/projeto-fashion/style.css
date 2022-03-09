@@ -138,6 +138,10 @@ h1,p {
     font-size: 2rem;
 }
 
+.map {
+    margin-bottom: 50px;
+}
+
 footer {
     background-color: #1b1b1b;
     padding: 20px;
