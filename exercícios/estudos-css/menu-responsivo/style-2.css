@@ -45,52 +45,77 @@ header {
     color: rgb(96, 223, 96);
 }
 
-button {
-    display: none;
-    background: none;
-    border: none;
-    outline: none;
+label {
     color: white;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2rem;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-button:focus ~ ul {
-    display: flex;
-    height: fit-content;
-    position: absolute;
-    top: 76px;
-    right: 0px;
-    background-color: black;
-    text-align: left;
 }
 
 @media (max-width: 900px) {
-    ul {
-        flex-direction: column;
+    
+    body {
+        overflow: hidden;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
         display: none;
     }
 
-    button {
+    label[for="ckb"] {
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 18px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: white;
+        transition: .4s ease-in-out;
+        border-radius: 200px
+    }
+
+    .navbar-items {
         display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        top: 77px;
+        right: 0px;
+        transform: translateX(100%);
+        background-color: black;
+        transition: .5s ease-in-out;
+    }
+    
+    input[type="checkbox"]:checked ~ .navbar-items {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 77px;
+    right: 0px;
+    transform: translateX(0);
+    background-color: black;
+    transition: .5s ease-in-out;
+    transition-delay: .2s;
     }
 
-    .navbar-item {
-        padding: 15px;
+    input[type="checkbox"]:checked ~ label[for="ckb"] .line1 {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    input[type="checkbox"]:checked ~ label[for="ckb"] .line2 {
+        display: none;
     }
 
-    .headercontainer ul li {
-        padding: 0px;
+    input[type="checkbox"]:checked ~ label[for="ckb"] .line3 {
+        transform: translateY(-2px) rotate(-45deg);
     }
 
-    .headercontainer ul li a {
-        padding: 10px;
+    .navbar-item a {
+        padding: 15px !important;
     }
 
 }
