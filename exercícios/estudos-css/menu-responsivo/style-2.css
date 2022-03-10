@@ -93,11 +93,12 @@ input[type="checkbox"] {
     }
     
     input[type="checkbox"] ~ .navbar-items .navbar-item {
-        display: none;
+        transform: translateX(100%);
     }
     
     input[type="checkbox"]:checked ~ .navbar-items .navbar-item {
         display: block;
+        transform: translateX(0);
     }
 
     input[type="checkbox"]:checked ~ .navbar-items {
