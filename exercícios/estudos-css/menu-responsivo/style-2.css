@@ -59,10 +59,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 900px) {
-    
-    body {
-        overflow: hidden;
-    }
+
 
     input[type="checkbox"] {
         margin-right: 10px;
@@ -84,23 +81,17 @@ input[type="checkbox"] {
         border-radius: 200px
     }
 
-    input[type="checkbox"] ~ .navbar-items .navbar-item {
-        display: none;
-    }
-    
-    input[type="checkbox"]:checked ~ .navbar-items .navbar-item {
-        display: inline-block;
-    }
+
 
     input[type="checkbox"] ~ .navbar-items {
+        display: flex;
         flex-direction: column;
-        height: 0;
-        width: 0;
+        height: fit-content;
+        width: fit-content;
         position: absolute;
         top: 77px;
         right: 0px;
         transform: translateX(100%);
-        display: ;
         background-color: black;
         transition: .5s ease-in-out;
     }
