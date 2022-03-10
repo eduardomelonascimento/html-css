@@ -5,8 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    overflow: hidden;
+body, html {
+    overflow-x: hidden
 }
 
 header {
@@ -111,15 +111,15 @@ input[type="checkbox"] {
     }
 
     input[type="checkbox"]:checked ~ label[for="ckb"] .line1 {
-        transform: translateY(6px) rotate(45deg);
+        transform: translateY(10px) rotate(-45deg);
     }
     
     input[type="checkbox"]:checked ~ label[for="ckb"] .line2 {
-        display: none;
+        opacity: 0;
     }
 
     input[type="checkbox"]:checked ~ label[for="ckb"] .line3 {
-        transform: translateY(-2px) rotate(-45deg);
+        transform: translateY(-6px) rotate(45deg);
     }
 
     .navbar-item a {
