@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 header {
     background-color: black;
 }
@@ -80,27 +84,27 @@ input[type="checkbox"] {
         border-radius: 200px
     }
 
-    .navbar-items {
+    input[type="checkbox"] ~ .navbar-items .navbar-item {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .navbar-items .navbar-item {
+        display: inline-block;
+    }
+
+    input[type="checkbox"] ~ .navbar-items {
         flex-direction: column;
-        height: fit-content;
-        width: fit-content;
+        height: 0;
+        width: 0;
         position: absolute;
         top: 77px;
         right: 0px;
         transform: translateX(100%);
+        display: ;
         background-color: black;
         transition: .5s ease-in-out;
     }
     
-    input[type="checkbox"] ~ .navbar-items .navbar-item {
-        transform: translateX(100%);
-    }
-    
-    input[type="checkbox"]:checked ~ .navbar-items .navbar-item {
-        display: block;
-        transform: translateX(0);
-    }
-
     input[type="checkbox"]:checked ~ .navbar-items {
     display: flex;
     flex-direction: column;
