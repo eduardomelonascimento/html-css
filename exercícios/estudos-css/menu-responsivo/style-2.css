@@ -109,7 +109,7 @@ input[type="checkbox"] {
     transition: .5s ease-in-out;
     transition-delay: .2s;
     }
-
+    
     input[type="checkbox"]:checked ~ label[for="ckb"] .line1 {
         transform: translateY(10px) rotate(-45deg);
     }
