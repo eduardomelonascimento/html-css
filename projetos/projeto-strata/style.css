@@ -32,7 +32,7 @@ strong {
     position: fixed;
     height: 100vh;
     width: 35%;
-    background-image: url(imagens/overlay.png), url(imagens/bg.jpg);
+    background-image: url(imagens/overlay.png), url(imagens/1646782835164.jpg);
     background-position: left top;
     background-size: auto, cover;
 }
@@ -170,7 +170,7 @@ section a:hover {
 .work-card img {
     width: 95%;
     border-radius: 5px;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
 }
 
 .work-card h3 {
