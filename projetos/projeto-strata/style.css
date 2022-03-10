@@ -149,7 +149,58 @@ section a:hover {
     border-top: 3px solid #efefef;
 }
 
-.recent-work h2, .get-in-touch h3 {
+.work-card a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+}
+
+.work-card  a:hover {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.work-card  a:after {
+    opacity: 0;
+}
+
+.work-card  a:hover::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    content: 'Veja Mais';
+    font-weight: bold;
+    color: white;
+    line-height: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.work-card  a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.work-card  a:hover::before {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.work-card h2, .get-in-touch h3 {
     font-size: 24px;
     line-height: 26px;
     color: #787878;
@@ -165,10 +216,12 @@ section a:hover {
 .work-card {
     width: 50%;
     flex: 1 1 250px;
+    margin: 10px;
 }
 
 .work-card img {
-    width: 95%;
+    display: block;
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
 }
