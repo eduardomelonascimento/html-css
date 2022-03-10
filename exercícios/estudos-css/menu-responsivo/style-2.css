@@ -81,7 +81,7 @@ input[type="checkbox"] {
     }
 
     .navbar-items {
-        display: flex;
+        display: none;
         flex-direction: column;
         height: fit-content;
         width: fit-content;
