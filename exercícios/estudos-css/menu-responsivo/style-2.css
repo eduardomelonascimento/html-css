@@ -49,6 +49,11 @@ label {
     color: white;
 }
 
+input[type="checkbox"] {
+    margin-right: 10px;
+    display: none;
+}
+
 @media (max-width: 900px) {
     
     body {
