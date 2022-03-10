@@ -81,7 +81,6 @@ input[type="checkbox"] {
     }
 
     .navbar-items {
-        display: none;
         flex-direction: column;
         height: fit-content;
         width: fit-content;
@@ -93,13 +92,21 @@ input[type="checkbox"] {
         transition: .5s ease-in-out;
     }
     
+    input[type="checkbox"] ~ .navbar-items .navbar-item {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .navbar-items .navbar-item {
+        display: block;
+    }
+
     input[type="checkbox"]:checked ~ .navbar-items {
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: fit-content;
     position: absolute;
-    top: 77px;
+    top: 76px;
     right: 0px;
     transform: translateX(0);
     background-color: black;
