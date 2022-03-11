@@ -200,8 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .header-top .logo {
-        float: left;
-        
+        float: left;   
     }
 
     .nav-bar {
@@ -228,6 +227,13 @@ h1, h2, h3, h4, h5, h6 {
     .top {
         background-color: #521a66;
         clear: both;
+    }
+
+    .top .icon-circle-right {
+        display: block;
+        font-size: 5rem;
+        color: white;
+        margin-top: 20px;
     }
     
     .top h1, .top h2 {
@@ -279,10 +285,8 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 200px;
     }
 
-    .icon-circle-right {
-        display: block;
-        font-size: 5rem;
-        color: white;
+    .top .icon-circle-right {
+        margin-top: 0;
     }
 
     .bottom {
