@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #58c4c4;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #37a0a0;
+}
+
+
+
+
+
+
+.header-top h1 {
+    text-align: center;
+    color: #612674;
+    margin: 10px 0;
+}
+
+.nav-bar {
+    background-color: #612674;
+    text-align: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #7c4792;
+}
+
+.top {
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.top h1 {
+    color: #612674;
+    font-size: 22px;
+    margin: 22px 10px;
+}
+
+.top h2 {
+    color: #a87bb7;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 0;
+}
+
+
+
+.middle {
+    padding: 32px 10px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.middle article {
+    padding: 15px 0;
+}
+
+.middle span[class^="icon"] {
+    font-size: 5rem;
+    color: #652e78;
+}
+
+.middle h3 {
+    font-size: 20px;
+    color: #652e78;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.middle p {
+    line-height: 1.5;
+    color: #222;
+    padding-bottom: 16px;
+}
+
+
+.bottom article {
+    padding: 10px;
+}
+
+.bottom h3 {
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: #652e78;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.bottom p {
+    line-height: 1.5;
+    color: #222;
+    padding-left: 6px;
+    margin-bottom: 10px;
+    border-left: 3px solid #652e78;
+}
+
+.footer-socials {
+    text-align: center;
+    list-style: none;
+    background-color: #303D4F;
+}
+
+.footer-socials li {
+    display: inline-block;
+}
+
+.footer-socials a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.footer-socials a:hover {
+    color: rgba(255, 255, 255, 0.775);
+}
+
+.footer-socials .hidden {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.275);
+    background-color: #253041;
+    text-align: center;
+}
+
+.footer-text p {
+    display: inline-block;
+    margin: 15px 10px 0 15px;
+    font-size: 12px;
+}
+
+.footer-text p:last-of-type {
+    margin-bottom: 15px;
+}
