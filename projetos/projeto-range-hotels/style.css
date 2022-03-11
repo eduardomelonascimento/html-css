@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-socials {
     text-align: center;
     list-style: none;
-    background-color: #303D4F;
+    background-color: #303D4c;
 }
 
 .footer-socials li {
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-text {
     color: rgba(255, 255, 255, 0.275);
-    background-color: #253041;
+    background-color: #25303e;
     text-align: center;
 }
 
