@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #37a0a0;
 }
 
+.icon-circle-right {
+    display: none;
+}
 
 
 .header-container {
@@ -267,16 +270,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1000px) {
-    
+
     .top {
-        background: #521a66 url(bg.jpeg);
+        background: #521a66 url(images/bg.jpeg);
         background-position: center top;
         background-size: cover;
         height: 300px;
         padding-top: 200px;
     }
 
-
+    .icon-circle-right {
+        display: block;
+        font-size: 5rem;
+        color: white;
+    }
 
     .bottom {
         display: flex;
