@@ -61,16 +61,12 @@ input[type="checkbox"] {
 @media (max-width: 900px) {
 
 
-    input[type="checkbox"] {
-        margin-right: 10px;
-        display: none;
-    }
-
-    label[for="ckb"] {
-        display: inline-block;
+    #button {
         margin-right: 10px;
         cursor: pointer;
     }
+
+    
 
     .line {
         width: 18px;
@@ -81,13 +77,11 @@ input[type="checkbox"] {
         border-radius: 200px
     }
 
-
-
-    input[type="checkbox"] ~ .navbar-items {
+    .navbar-items {
         display: flex;
         flex-direction: column;
         height: fit-content;
-        width: fit-content;
+        width: 100vw;
         position: absolute;
         top: 77px;
         right: 0px;
@@ -96,11 +90,11 @@ input[type="checkbox"] {
         transition: .5s ease-in-out;
     }
     
-    input[type="checkbox"]:checked ~ .navbar-items {
+    .navbar-items-open{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: fit-content;
+    width: 100vw;
     position: absolute;
     top: 76px;
     right: 0px;
@@ -110,15 +104,15 @@ input[type="checkbox"] {
     transition-delay: .2s;
     }
     
-    input[type="checkbox"]:checked ~ label[for="ckb"] .line1 {
+    .line1-close {
         transform: translateY(10px) rotate(-45deg);
     }
     
-    input[type="checkbox"]:checked ~ label[for="ckb"] .line2 {
+    .line2-close {
         opacity: 0;
     }
 
-    input[type="checkbox"]:checked ~ label[for="ckb"] .line3 {
+    .line3-close {
         transform: translateY(-6px) rotate(45deg);
     }
 
@@ -126,4 +120,7 @@ input[type="checkbox"] {
         padding: 15px !important;
     }
 
+    .navbar-item a:hover {
+        color: #4bc955;
+    }
 }
