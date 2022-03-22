@@ -30,7 +30,7 @@ header {
     text-decoration: none;
 }
 
-.headercontainer ul {   
+.headercontainer ul {
     list-style: none;
 }
 
@@ -40,12 +40,12 @@ header {
     display: block;
 }
 
-.headercontainer .navbar-items {
+.navbar-items {
     display: flex;
     justify-content: space-between;
 }
 
-.headercontainer .navbar-items a:hover {
+.navbar-items a:hover {
     color: rgb(96, 223, 96);
 }
 
@@ -53,9 +53,26 @@ label {
     color: white;
 }
 
-input[type="checkbox"] {
-    margin-right: 10px;
-    display: none;
+
+
+.line1-close {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.line2-close {
+    opacity: 0;
+}
+
+.line3-close {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.navbar-item a {
+    padding: 15px !important;
+}
+
+.navbar-item a:hover {
+    color: #4bc955;
 }
 
 @media (max-width: 900px) {
@@ -66,7 +83,7 @@ input[type="checkbox"] {
         cursor: pointer;
     }
 
-    
+
 
     .line {
         width: 18px;
@@ -78,49 +95,20 @@ input[type="checkbox"] {
     }
 
     .navbar-items {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: 100vw;
+        display: block;
+        height: 100vh;
+        max-width: 500px;
+        width: 100%;
         position: absolute;
-        top: 77px;
+        top: 76px;
         right: 0px;
         transform: translateX(100%);
         background-color: black;
         transition: .5s ease-in-out;
     }
-    
-    .navbar-items-open{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: 100vw;
-    position: absolute;
-    top: 76px;
-    right: 0px;
-    transform: translateX(0);
-    background-color: black;
-    transition: .5s ease-in-out;
-    transition-delay: .2s;
-    }
-    
-    .line1-close {
-        transform: translateY(10px) rotate(-45deg);
-    }
-    
-    .line2-close {
-        opacity: 0;
-    }
 
-    .line3-close {
-        transform: translateY(-6px) rotate(45deg);
-    }
-
-    .navbar-item a {
-        padding: 15px !important;
-    }
-
-    .navbar-item a:hover {
-        color: #4bc955;
+    .navbar-items-open {
+        transform: translateX(0);
+        transition-delay: .2s;
     }
 }
