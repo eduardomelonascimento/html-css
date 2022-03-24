@@ -53,8 +53,9 @@ body {
 .toggle-js {
     position: fixed;
     top: 25px;
-    right: 25px;
+    right: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .line {
@@ -64,6 +65,32 @@ body {
     margin: 5px;
     background-color: #2E3233;
     border-radius: 200px;
+    transition: .3s;
+}
+
+.line1-opn {
+    transform: translateY(9px) rotate(-45deg);
+}
+
+.line2-opn {
+    opacity: 0;
+}
+
+.line3-opn {
+    transform:  translateY(-7px) rotate(45deg);
+}
+
+.header__nav {
+    transition: .5s;
+}
+
+.js .header__nav {    
+    height: 0;
+    overflow: hidden;
+}
+
+.js .header__nav-opn {
+    height: 360px;
 }
 
 .header__nav li {
@@ -387,9 +414,9 @@ body {
         display: none;
     }
 
-    .header__nav {
+    .header > .header__nav {
         width: 65%;
-
+        height: 100%;
         position: relative;
     }
 
