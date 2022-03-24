@@ -19,7 +19,7 @@
      
    
             <a href="index.html" class="header__logoTitle">Infusion</a>
-            <button class="header__menuToggle" style="display: none;"><span>Menu</span>
+            <button class="header__menuToggle" style="display: none;"><span class="sr-only">Menu</span>
                 <span class="toggleLine"></span>
                 <span class="toggleLine"></span>
                 <span class="toggleLine"></span>
@@ -145,10 +145,8 @@
         <div class="slideshow">
             <figure><img src="images/slider/slide-01.png" alt=""></figure>
             <figure><img src="images/slider/slide-02.png" alt=""></figure>
-            <figure><img src="images/slider/slide-01.png" alt=""></figure>
-            <figure><img src="images/slider/slide-02.png" alt=""></figure>
-            <span style="display: none;" class="prev"><i class="fa-solid fa-angle-left"></i></span>
-            <span style="display: none;" class="next"><i class="fa-solid fa-angle-right"></i></span>
+            <span style="display: none;" class="prev"><i class="fa-solid fa-angle-left prev"></i></span>
+            <span style="display: none;" class="next"><i class="fa-solid fa-angle-right next"></i></span>
         </div>
 
     </div>
@@ -157,20 +155,21 @@
 
         <div class="quote-slideshow">
             <figure>
-                <h2> Dignissimos eveniet quos corrupti voluptatem iste vitae quaerat.</h2>
+                <h2> Dignissimos eveniet quos voluptatem iste  quaerat.</h2>
                 <figcaption>
                     Nam mi enim, auctor non ultricies.
                 </figcaption>
             </figure>
             <figure>
-                <h2> Dignissimos eveniet quos corrupti voluptatem iste vitae quaerat.</h2>
+                <h2> Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
                 <figcaption>
-                    Nam mi enim, auctor non ultricies.
+                     Facere illo culpa blanditiis minima. Nulla quae quod voluptate modi?
                 </figcaption>
             </figure>
+            <span style="display: none;" class="prev"><i class="fa-solid fa-angle-left prev"></i></span>
+            <span style="display: none;" class="next"><i class="fa-solid fa-angle-right next"></i></span>
         </div>
-        <span class="prev" style="display: none"><i class="fa-solid fa-angle-left"></i></span>
-        <span class="next" style="display: none"><i class="fa-solid fa-angle-right"></i></span>
+        
     </section>
 
     <footer class="footer">
@@ -199,6 +198,7 @@
 
 
     <script src="menu.js"></script>
+    <script src="carousel.js"></script>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/f903f9811f.js" crossorigin="anonymous"></script>
 </body>
