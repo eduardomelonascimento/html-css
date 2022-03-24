@@ -94,7 +94,6 @@ body {
 .js .hero {
     margin-top: 76px;
 }
-
 .hero {
     height: 85vh;
     text-align: center;
@@ -104,7 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 16px) bottom no-repeat, linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 16px) bottom no-repeat, url(images/01.jpg);
+    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 16px) bottom no-repeat, linear-gradient(-45deg, #efefef 50%, transparent 50%) left calc(50% - 16px) bottom no-repeat, url(images/01.jpg) center top;
     background-size: 32px 32px, 32px 32px, cover;
 
 }
