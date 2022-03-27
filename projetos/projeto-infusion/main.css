@@ -388,7 +388,7 @@ body {
     left: 0;
     width: 100%;
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .js .quote-slideshow .show {
