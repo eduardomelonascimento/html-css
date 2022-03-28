@@ -1,4 +1,3 @@
-
 function Menu(config) {
 
     this.nav = (typeof config.container === 'string') ? document.querySelector(config.container) : config.container
@@ -12,14 +11,12 @@ function Menu(config) {
 
     this.btn.removeAttribute('style');
 
-    //closeMenu();
-
     if (this.maxWidth) {
         window.addEventListener('resize', e => {
             if (window.innerWidth > _this.maxWidth) {
                 _this.nav.removeAttribute('style');
                 _opened = true;
-            } else if (!this.nav.getAttribute('style')){
+            } else if (!this.nav.getAttribute('style')) {
                 closeMenu();
             }
         })
@@ -62,4 +59,3 @@ function Menu(config) {
         Object.keys(_style).forEach(stl => _this.nav.style[stl] = _style[stl])
     }
 }
-
