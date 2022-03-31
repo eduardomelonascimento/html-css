@@ -4,35 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
     <link rel="shortcut icon" href="imagens/spotify-brands.svg" type="image/x-icon">
     <title>Escutar muda tudo - Spotify</title>
 </head>
 
 <body>
-
     <!-- Header -->
-
     <header>
         <div class="header-container">
-            
             <div class="header-logo">
                 <a href="#"><img class="logo" src="imagens/logo.png" alt="logo spotify"></a>
             </div>
-
+            <div id="toggle">
+                <span class="sr-only">Menu</span>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
             <nav class="header-nav">
-                
-                <input type="checkbox" id="toggle">
-
-                <label for="toggle">
-                    <span class="menu-toggle">
-                        <div class="line line1"></div>
-                        <div class="line line2"></div>
-                        <div class="line line3"></div>
-                    </span>
-                </label>
-                
                 <ul>
                     <li><a href="#">Premium</a></li>
                     <li><a href="#">Suporte</a></li>
@@ -42,14 +33,11 @@
                     <li><a href="#">Entrar</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
-
+    <div class="overlay"></div>
     <!-- Header -->
-
     <!-- Showcase -->
-
     <section class="showcase">
         <div class="showcase-container">
             <div class="showcase-title">
@@ -61,12 +49,8 @@
             <div class="showcase-button"><button type="submit">Baixe o Spotify Free</button></div>
         </div>
     </section>
-
-
     <!-- Showcase -->
-
     <!-- Footer -->
-
     <footer>
         <div class="footer-container">
             <div class="footer-top">
@@ -124,10 +108,10 @@
         </div>
         </div>
     </footer>
-
     <!-- Footer -->
     <script src="https://kit.fontawesome.com/f903f9811f.js" crossorigin="anonymous"></script>
-    
+    <script src="mobile-navbar2.js"></script>
+
 </body>
 
 </html>
