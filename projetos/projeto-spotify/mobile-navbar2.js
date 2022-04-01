@@ -34,7 +34,7 @@ class MobileNavBar {
             if (link.style.animation) {
                 link.style.animation = ''
             } else {
-                link.style.animation = `navLinkAnimation .5s ease forwards ${index/40 + .1}s`
+                link.style.animation = `navLinkAnimation .4s ease forwards ${index/40 + .1}s`
             }
         });
     }
