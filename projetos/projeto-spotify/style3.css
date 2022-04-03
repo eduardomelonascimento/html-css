@@ -75,7 +75,7 @@ header {
         transition-delay: 1s;
         transition: .2s ease-in-out;    
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     
     .active {
