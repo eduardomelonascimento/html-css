@@ -73,7 +73,9 @@ header {
         padding: 38px;
         opacity: 0;
         transition-delay: 1s;
-        transition: .2s ease-in-out;
+        transition: .2s ease-in-out;    
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     
     .active {
